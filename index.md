@@ -1,13 +1,13 @@
-## Welcome to Leo's RD page
+<h2> Welcome to Leo's RD page </h2>
 
-### Education
+<h3> Education </h3>
 
-
-**Master degree**
-**National Taiwan University, Taipei, Taiwan** <div align="right">09/2015 —07/2017</div>
-Department of Life Science 						
-Thesis: 	Auxilin enhance neurotransmission and interact with NCS-1
-Advisor: 	Professor Chien-Yuan, Pan
+<pre>
+<b>Master degree</b>
+<b>National Taiwan University, Taipei, Taiwan</b>&#9;&#9;&#9;&#9;09/2015 —07/2017
+<p>Department of Life Science</p>					
+<p>Thesis: &#9;Auxilin enhance neurotransmission and interact with NCS-1</p>
+<p>Advisor: &#9;Professor Chien-Yuan, Pan</p>
 
 **Bachelor degree**
 **Tzu Chi University, Hualien, Taiwan** 					09/2010 — 03/2015
@@ -39,3 +39,4 @@ Machine learning, deep learning, AI in healthcare,
 ### Awards and Others
 
 **TzuChi Formosa Team 2011 iGEM competition bronze metal**
+</pre>

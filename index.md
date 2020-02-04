@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+## Welcome to Leo's RD page
 
-You can use the [editor on GitHub](https://github.com/LeoLim3092/leolim3092.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Education
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+‘’‘
+*Master degree*
+*National Taiwan University, Taipei, Taiwan*				09/2015 —07/2017
+Department of Life Science 						
+Thesis: 	Auxilin enhance neurotransmission and interact with NCS-1
+Advisor: 	Professor Chien-Yuan, Pan
 
-### Markdown
+*Bachelor degree*
+*Tzu Chi University, Hualien, Taiwan* 					09/2010 — 03/2015
+Department of Life Science 
+Project: 	Gait analysis by TreadScan as a method for evaluate 
+		stroke severity in middle cerebral artery occlusion model.
+Advisor:	Dr. Pang, Cheng-Yoong
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Professional experience
 
-```markdown
-Syntax highlighted code block
+*Research assistant*								07/2014 — 03/2015
+*Hualien Tzu Chi Hospital Department of Medical Research, Hualien, Taiwan*		
+Professor: Dr. Pang, Cheng-Yoong
+Spinal cord injury and middle cerebral artery occlusion model,
+	behavior assay, gait analysis
 
-# Header 1
-## Header 2
-### Header 3
+*Research assistant*								09/2017 — 05/2018
+*Institute of Biological chemistry, Academia Sinica, Taiwan* 		
+PI: Dr. Chi-Kuang Yao
+Dissection of drosophila larval neuromuscular junction, staining, confocal, TEM, 
+	electrophysiology
 
-- Bulleted
-- List
+*Research assistant*								09/2018 — present
+*National Taiwan University, Taipei, Taiwan*
+Professor: J.-S. Roger Jang 
+Machine learning, deep learning, AI in healthcare,
+	sequential modeling, images recognition	
 
-1. Numbered
-2. List
+### Awards and Others
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LeoLim3092/leolim3092.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+TzuChi Formosa Team 2011 iGEM competition bronze metal 
+’‘’

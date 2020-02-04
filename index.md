@@ -3,8 +3,8 @@
 ### Education
 
 ```
-**Master degree**
-**National Taiwan University, Taipei, Taiwan**					09/2015 —07/2017
+\**Master degree\**
+\**National Taiwan University, Taipei, Taiwan\**					09/2015 —07/2017
 Department of Life Science 						
 Thesis: 	Auxilin enhance neurotransmission and interact with NCS-1
 Advisor: 	Professor Chien-Yuan, Pan

@@ -1,21 +1,20 @@
 <h2> Welcome to Leo's RD page </h2>
 
 <h3> Education </h3>
+<p>
+	<b>Master degree</b>
+	<b>National Taiwan University, Taipei, Taiwan&#9;&#9;&#9;&#9;09/2015 —07/2017 </b>
+	<br>Department of Life Science					
+	<br>Thesis: &#9;Auxilin enhance neurotransmission and interact with NCS-1
+	<br>Advisor: &#9;Professor Chien-Yuan, Pan</p>
+<p>
+	<b>Bachelor degree</b>
+	<b>Tzu Chi University, Hualien, Taiwan&#9;&#9;&#9;&#9;&#9;09/2010 — 03/2015</b> 
+	<br>Department of Life Science
+	<br>Project: &#9;Gait analysis by TreadScan as a method for evaluate stroke severity in middle cerebral artery 	occlusion model.
+	<br>Advisor: &#9;Dr. Pang, Cheng-Yoong</p>
 
-<pre>
-<b>Master degree</b>
-<b>National Taiwan University, Taipei, Taiwan&#9;&#9;&#9;&#9;09/2015 —07/2017 </b>
-<p>Department of Life Science</p>					
-<p>Thesis: &#9;Auxilin enhance neurotransmission and interact with NCS-1</p>
-<p>Advisor: &#9;Professor Chien-Yuan, Pan</p>
 
-<b>Bachelor degree</b>
-<b>Tzu Chi University, Hualien, Taiwan&#9;&#9;&#9;&#9;09/2010 — 03/2015</b> 
-<p>Department of Life Science<p>
-<p>Project: &#9;Gait analysis by TreadScan as a method for evaluate stroke severity in middle cerebral artery occlusion model.<p>
-<p>Advisor: &#9;Dr. Pang, Cheng-Yoong<p>
-</pre>
-</pre>
 ### Professional experience
 
 **Research assistant**								07/2014 — 03/2015

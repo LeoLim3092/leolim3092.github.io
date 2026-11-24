@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leo 的首頁</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4EF;--panel:#fff;--ink:#1F2328;--muted:#6B7078;--line:#E4E1D9;--accent:#1F6FEB;--radius:14px}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.55}
+.wrap{max-width:880px;margin:0 auto;padding:56px 24px 64px}
+.hero h1{font-size:34px;margin:0 0 6px;letter-spacing:.01em}
+.hero p{margin:0;color:var(--muted);font-size:16px}
+nav{display:flex;gap:18px;margin:22px 0 40px;font-size:14px}
+nav a{color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px}
+nav a:hover{border-color:var(--ink)}
+h2{font-size:20px;margin:0 0 16px;display:flex;align-items:baseline;gap:10px}
+h2 small{font-size:13px;color:var(--muted);font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{display:flex;flex-direction:column;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s,border-color .15s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--c)}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.07);border-color:#D6D2C8}
+.card .icon{font-size:26px;line-height:1}
+.card .t{font-weight:700;font-size:16px}
+.card .d{font-size:13.5px;color:#3B4048;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:11.5px;padding:1px 8px;border-radius:999px;background:color-mix(in srgb,var(--c) 12%,white);color:var(--c)}
+.go{font-size:13px;color:var(--accent);margin-top:2px}
+.card.soon{opacity:.6;pointer-events:none}
+section{margin-bottom:44px}
+.about{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;font-size:14.5px;color:#3B4048}
+footer{color:var(--muted);font-size:12.5px;margin-top:40px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <h1>Leo</h1>
+    <p>這裡放我做的小工具和專案。</p>
+  </header>
+  <nav>
+    <a href="#projects">我的專案</a>
+    <a href="#about">關於我</a>
+  </nav>
+
+  <section id="projects">
+    <h2>我的專案 <small id="count"></small></h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about">
+    <h2>關於我</h2>
+    <div class="about">（在這裡寫一段自我介紹，或刪掉這一區）</div>
+  </section>
+
+  <footer>© <span id="yr"></span> Leo</footer>
+</div>
+
+<script>
+/* ===== 新增專案：在這個清單加一筆就好 =====
+   url 用 "/repo名稱/"：同一個帳號底下的 GitHub Pages 專案都會掛在這個路徑
+   soon: true 會顯示成灰色、不能點（還沒做好的專案）               */
+const PROJECTS = [
+  {
+    icon: '🗺️',
+    title: '家人來臺北・行程表',
+    desc: '2026/11/26–12/2 的時間軸行程卡片，附 Google 地圖大眾運輸路線。',
+    url: '/taipei-trip/',
+    tags: ['旅遊', 'Google Maps'],
+    color: '#E8590C',
+  },
+  // {
+  //   icon: '📈',
+  //   title: '下一個專案',
+  //   desc: '一句話介紹。',
+  //   url: '/repo-name/',
+  //   tags: ['標籤'],
+  //   color: '#1971C2',
+  //   soon: true,
+  // },
+];
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+document.getElementById('grid').innerHTML = PROJECTS.map(p => `
+  <a class="card${p.soon ? ' soon' : ''}" href="${esc(p.url)}" style="--c:${esc(p.color || '#1F6FEB')}">
+    <div class="icon">${esc(p.icon || '📁')}</div>
+    <div class="t">${esc(p.title)}</div>
+    <div class="d">${esc(p.desc)}</div>
+    <div class="tags">${(p.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('')}</div>
+    <div class="go">${p.soon ? '即將推出' : '打開 →'}</div>
+  </a>`).join('');
+document.getElementById('count').textContent = `${PROJECTS.filter(p => !p.soon).length} 個`;
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
